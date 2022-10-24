@@ -1,0 +1,19 @@
+loaded 124 atom templates
+loaded 548 bond templates
+loaded total 658 templates
+Template extractor setting: {'verbose': False, 'use_stereo': True, 'use_symbol': True, 'max_unmap': 5, 'retro': True, 'remote': True, 'least_atom_num': 2}
+test data already preprocessed...loaded data!
+      Unnamed: 0  ... Frequency
+0              0  ...        42
+1              1  ...       323
+2              2  ...       157
+3              3  ...       323
+4              4  ...        76
+...          ...  ...       ...
+5002        5002  ...       782
+5003        5003  ...       955
+5004        5004  ...       457
+5005        5005  ...      1123
+5006        5006  ...       385
+
+[5007 rows x 6 columns]
