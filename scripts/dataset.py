@@ -31,7 +31,7 @@ class USPTODataset(object):
 
     def _pre_process(self, smiles_to_graph, node_featurizer, edge_featurizer, load, log_every):
         if os.path.exists(self.cache_file_path) and load:
-            print('Loading previously saved dgl graphs...')
+            print('Loading previously saved dgl graphs...' + self.cache_file_path)
             self.graphs, label_dict = load_graphs(self.cache_file_path)
         else:
             print('Processing dgl graphs from scratch...')
@@ -61,7 +61,7 @@ class USPTOTestDataset(object):
 
     def _pre_process(self, smiles_to_graph, node_featurizer, edge_featurizer, load, log_every):
         if os.path.exists(self.cache_file_path) and load:
-            print('Loading previously saved test dgl graphs...')
+            print('Loading previously saved test dgl graphs...',self.cache_file_path)
             self.graphs, label_dict = load_graphs(self.cache_file_path)
         else:
             print('Processing test dgl graphs from scratch...')
